@@ -25,9 +25,7 @@ body {
     
 .section {
   display: flex;
-  justify-content: space-between;
-  padding-left: 200px;
-  padding-right: 170px;
+  justify-content: space-around;
   margin-top: -1000px;
 }
 
@@ -82,7 +80,6 @@ animation-delay: .5s;
 
 }
 .hero {
-  margin-top: 60px;
   background-color: #ffffff00;
   z-index: 1;
   margin-top: 150px;
@@ -96,9 +93,9 @@ opacity: 0;
 }
 
 .stroke {
-  scale: 2.121;
+  scale: 2.125;
   z-index: -1;
-  margin-left: 480px;
+  margin-left: 460px;
 }
 
 @keyframes fadeIn {
@@ -127,6 +124,37 @@ opacity: 0;
 
 
 
+}
+
+.work_section {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  color: blue;
+  text-shadow: 0px 0px 10px;
+  font-size: 36px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ui {
+  background-color: #c29e00;
+}
+
+.motion {
+  background-color: #c29e00;
+}
+
+.code {
+  background-color: #c29e00;
+}
+.envelope {
+  display: flex;
+  justify-content: center;
+  -webkit-filter: drop-shadow(0px 0px 50px white);
+  filter: drop-shadow(0px 0px 30px white);
+  filter: drop-shadow(inset 0px 0px 20px white);
 }
 
 
