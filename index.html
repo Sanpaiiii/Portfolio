@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Home</title>
     <link rel ="stylesheet" href= "stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
         </style>
         <script src="noise.js"></script>
-
-        
-
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
         <dotlottie-player class="stroke" src="https://lottie.host/9059f01d-190b-4544-aa84-c0cd23e4f745/26WgXnENW1.json" background="transparent" speed="1" style="width: 900px; height: 900px;" autoplay ></dotlottie-player>
@@ -37,8 +35,8 @@
  
 </div>
 </div>
-<h1>Contents</h1>
-<div class="work_section">
+<h1 data-aos="fade-up">Contents</h1>
+<div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="work_section">
 <div class="ui">
     <div class="first">
     <p class="workNumber">01</p>
@@ -50,12 +48,12 @@ UI/UX
 </div>
 <div class="code">
     <p class="workNumber">02</p>
-    <img src="profinfin0.png" width="350px" height="290px" class="projectimg">
+    <img src="profinfin0.png" width="350px" height="300px" class="projectimg">
     <p class="description">Projects</p>
 </div>
 <div class="motion">
     <p class="workNumber">03</p>
-    <img src="Motion0.png" width="350px" height="auto" class="motionImage">
+    <img src="trimotion0.png" width="350px" height="auto" class="motionImage">
     <p class="description">Motion</p>  
 </div>
 </div>
@@ -65,6 +63,9 @@ UI/UX
 
 
 
-    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>    
 </body>
 </html>
