@@ -7,6 +7,20 @@
    bottom: 0px; 
    background-color: black;
 }
+
+#noiseF {
+  z-index: 100;
+  background: url(noise.png);
+  background-repeat: repeat-y;
+  mix-blend-mode: screen;
+  left: 0px; 
+  right: 0px; 
+  top: 0px; 
+  bottom: 0px; 
+  position: fixed;
+  pointer-events: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   display: none;
@@ -159,7 +173,7 @@ opacity: 0;
   margin-right: 150px;
 }
 
-h1 {
+.contents {
   color: #ffd40c;
   font-family: "Playfair Display";
   font-weight: bold;
@@ -167,8 +181,9 @@ h1 {
   font-size: 90px;
   display: flex;
   justify-content: flex-start;
-  margin-left: 300px ;
+  margin-left: 300px;
   margin-top: -50px;
+  margin-bottom: 100px;
 }
 
 .ui {
@@ -203,6 +218,11 @@ h1 {
   flex-direction: column;
   align-items: end;
   justify-content: space-evenly;
+  transition: transform .2s ease-in-out;
+}
+
+.motion:hover {
+  transform: scale(1.1);
 }
 
 .code {
@@ -216,6 +236,11 @@ h1 {
   flex-direction: column;
   align-items: end;
   justify-content: space-evenly;
+  transition: transform .2s ease-in-out;
+}
+
+.code:hover {
+transform: scale(1.1);
 }
 
 .workNumber {
@@ -267,4 +292,16 @@ h1 {
   margin-top: 30px;
   margin-bottom: -17px;
   width: 340px;
+}
+
+.contact {
+  color: #ffd40c;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  text-shadow: 0px 0px 100px;
+  font-size: 90px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 300px;
+  margin-top: 150px;
 }
