@@ -8,6 +8,69 @@
    background-color: black;
 }
 
+nav {
+  z-index: 98;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.border {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: table;
+  padding: 0;
+  margin: 5px;
+  color: #ffd40c;
+  list-style-type: none;
+  font-size: 24px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  text-shadow: 0px 0px 20px;
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding-inline: 20px;
+}
+
+.home {
+  color: #ffd40c;
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  transition: transform .2s ease-in-out;
+}
+.home:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffd40c;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.home:hover:after { 
+  width: 100%; 
+  left: 0;
+}
+
+.home:hover {
+transform: scale(1.1);
+}
+
 #noiseF {
   z-index: 100;
   background: url(noise.png);
@@ -19,6 +82,7 @@
   bottom: 0px; 
   position: fixed;
   pointer-events: none;
+  filter: opacity(0.7);
 }
 
 ::-webkit-scrollbar {
@@ -130,6 +194,7 @@ opacity: 0;
   scale: 2.14;
   z-index: -1;
   margin-left: 500px;
+  margin-top: 50px;
 }
 
 @keyframes fadeIn {
@@ -206,6 +271,10 @@ opacity: 0;
   transform: scale(1.1);
 }
 
+.ui:active {
+  opacity: 0.8;
+}
+
 .motion {
   background-color: #ffd40c;
   height: 550px;
@@ -225,6 +294,10 @@ opacity: 0;
   transform: scale(1.1);
 }
 
+.motion:active {
+  opacity: 0.8;
+}
+
 .code {
   background-color: #ffd40c;
   height: 550px;
@@ -241,6 +314,10 @@ opacity: 0;
 
 .code:hover {
 transform: scale(1.1);
+}
+
+.code:active {
+  opacity: 0.8;
 }
 
 .workNumber {
